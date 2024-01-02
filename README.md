@@ -6,20 +6,48 @@ PC
 Anaconda - Python 3.7
 ## ALGORITHM: 
 ### Step 1:
+open the file myfile.txt in read mode
 
-### Step 2: 
- 
-### Step 3: 
+### Step 2:
+open the file yourfile.txt in write mode
 
-### Step 4:  
+### Step 3:
+read the file
 
-### Step 5: 
+### Step 4:
+write the file into another file
 
-### Step 6: 
+### Step 5:
+end the program 
 
 ## PROGRAM:
+```py
+#PROGRAM: Copy - File
+#Developed by : MOHAMMAD FAIZAL SK
+#Reg no : 212223240092
+def copy(filename,newfile):
+    with open(filename,'r') as fp:
+        with open(newfile,'w') as fp1:
+            data1=fp.read()
+            fp1.write(data1)
+filename=input("Enter an Existing File:")
+newfile=input("Enter a name for new file:")
+copy(filename,newfile)
+```
 
 ### OUTPUT:
+output
+
+![](image-1.png)
+
+
+Text File
+
+![](image.png)
+
+Copy File
+
+![](image-2.png)
 
 
 
